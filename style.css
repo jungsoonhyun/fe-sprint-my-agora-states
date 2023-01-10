@@ -1,6 +1,217 @@
-/* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요. */
-main{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+/* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요.
+/* main에 flex속성을 주어 요소를 수직으로 나열, 중앙으로 정렬 */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+    }
+
+    /*button,
+    input,
+    textarea {
+        font-size: 100%;
+        vertical-align: baseline;
+        line-height: normal;
+        *vertical-align: middle;
+    } */
+      
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E8C4C4;
+        color: #2B3A55;
+        font-family: "Gill Sans", sans-serif;;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    li.discussion__container{
+        display: flex;
+        flex-direction: row;
+        /*justify-content: space-between;*/
+        width: 540px;
+        margin-bottom: 0.5rem;
+        background-color: var(--surface);
+        border-radius: 5px;
+        list-style-type: none;
+        border: 1px solid black;
+        font-size: 0.5em;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 540px;
+    }
+
+    h1 {
+        /*display: block;*/
+        font-size: 35px;
+        margin-bottom: 0.5rem;
+        /*border-radius: 20px;*/
+    }
+
+    .discussion__wrapper {
+        width: 650px;
+        height: 100vh;
+        background: #F2E5E5;
+        overflow-y: scroll;
+        border-radius: 10px;
+    }
+
+    .discussion__avatar--wrapper > img {
+        width : 48px;
+        border-radius: 100%;
+    }
+
+    .discussion__wrapper::-webkit-scrollbar {
+        display: none;
+      }
+
+    .form__container {
+        display: flex;
+        width: 600px;
+        height: 200px;
+        background: #CE7777;
+        margin-bottom: 50px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .form__container form {
+        width: 530px;
+        margin: auto;
+    }
+
+    .form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form__input--wrapper {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        align-items: center;*/
+        width: 300px;
+        font-weight : 600;
+        color: #2B3A55;
+    }
+
+    .form__input--wrapper div {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .form__input--name {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    input {
+        width: 150px;
+        height: 25px;
+        padding-right: 5px;
+        border-radius: 5px;
+        border: none;
+        color: black;
+        background: #F2E5E5;
+        text-align: center;
+    }
+
+    .form__input--wrapper div {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .form__input--title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .form__textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .form__textbox label {
+        margin-bottom: 5px;
+    }
+
+    .form__textbox textarea {
+        height: 70px;
+        padding: 10px 0px 10px 10px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .form__submit {
+        margin: auto 0;
+        padding: 0;
+    }
+
+    .form__submit input {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        border: none;
+        padding: 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .discussion__wrapper {
+        width: 600px;
+        height: 100vh;
+        overflow-y: scroll;
+        border-radius: 10px;
+    }
+
+    .discussions__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width:600px;
+        height: 120px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    .discussion__avatar--wrapper {
+        min-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .discussion__answered > button {
+        border: 0;
+        background: #CE7777;
+        outline: 1px solid ;
+        color: #CE7777;
+        width: 12px;
+        height: 14px;
+        background-color: transparent;
+        line-height: 10px;
     }
